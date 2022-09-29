@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const Pokemon = new Schema({
-  //   id: {
-  //     type: Number,
-  //   },
+  id: {
+    type: Number,
+  },
   name: {
     type: Object,
     required: true,

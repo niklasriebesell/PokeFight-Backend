@@ -10,7 +10,7 @@ const getAllPokemons = async (req, res) => {
 };
 // POKEMON BY ID
 const getSinglePokemon = async (req, res) => {
-  const { id } = req.params;
+  const { id } = Number(req.params);
   try {
     const pokemon = await Pokemons.findById(id);
     res.status(200).json(pokemon);

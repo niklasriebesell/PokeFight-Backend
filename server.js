@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 // GET ALLES POKEMONS
 app.use("/pokemons", pokeRouter);
 
-// app.use("/pokemons/:id", require("./routes/pokemon"));
+app.use("/pokemons/:id", pokeRouter);
 app.listen(PORT, () => {
   console.log(`Server is running on Port: ${PORT}`);
 });
